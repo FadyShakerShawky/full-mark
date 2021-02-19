@@ -9,99 +9,26 @@
   <link rel="stylesheet" href="./style/common.css">
   <link rel="stylesheet" href="./style/chat.css" />
   <link rel="stylesheet" href="./style/porto.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+></script>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+  crossorigin="anonymous"
+></script>
 </head>
 <body>
   <!-- start of header -->
-  <header style="width: auto;">
-    <a href="index.html" ><img src="./media/logo.png" alt="logo" /></a>
-    <div class="dropdown">
-      <span style="display: block; width: 12vw;" class="hover-border-white"
-        ><i class="fas fa-list"></i>
-        <input
-          type="button"
-          onmouseover="showCategories()"
-          class="categoriesbtn"
-          value="Categories"
-      />
-      <div id="container" class="dropdown-content">
-        <span>
-          <input
-            type="button"
-            value="Primary School"
-            class="categoriesbtn"
-            onclick="showSecondryMenue(this.value)"
-          />
-          <i class="fas fa-arrow-right"></i>
-          <div class="sub-menue" id="primary-links">
-            <a href="firstgrade.html">first grade</a>
-            <a href="secondgrade.html">second grade</a>
-            <a href="thirdgrade.html">third grade</a>
-            <a href="forthgrade.html">forth grade</a>
-            <a href="fifthgrade.html">fifth grade</a>
-            <a href="sixgrade.html">six grade</a>
-          </div>
-        </span>
-        <span>
-          <input
-            type="button"
-            value="Secondary School"
-            class="categoriesbtn"
-            onclick="showSecondryMenue(this.value)"
-          />
-          <i class="fas fa-arrow-right"></i>
-          <div class="sub-menue" id="secondary-school-links">
-            <a href="firstgrade.html">first grade</a>
-            <a href="secondgrade.html">second grade</a>
-            <a href="thirdgrade.html">third grade</a>
-          </div>
-        </span>
-        <span>
-          <input
-            type="button"
-            value="High School"
-            class="categoriesbtn"
-            onclick="showSecondryMenue(this.value)"
-          /><i class="fas fa-arrow-right"></i>
-          <div class="sub-menue" id="high-school-links">
-            <a href="firstgrade.html">first grade</a>
-            <a href="secondgrade.html">second grade</a>
-            <a href="thirdgrade.html">third grade</a>
-          </div></span
-        ><span
-          ><input
-            type="button"
-            value="Collage"
-            class="categoriesbtn"
-            onclick="showSecondryMenue(this.value)" /><i
-            class="fas fa-arrow-right"
-          ></i
-        ></span>
-      </div>
-    </div>
-    <span id="search-bar-header"
-      ><input type="search" placeholder="Search for anything" />
-      <i class="fas fa-search" id="search-icon"></i
-    ></span>
-    <span class="hover-border-white"
-      ><a href="search_courses.html">Browse our courses</a></span
-    >
-    <span class="hover-border-white"
-      ><a href="teacherprofile.html">Browse our teachers</a></span
-    >
-    <i class="fas fa-shopping-cart hover-border-white"></i>
-    <input
-      type="button"
-      value="Log in"
-      class="hover-border-white"
-      onclick="window.open(`signin-up.html`, `_self`)"
-    />
-    <input
-      type="button"
-      value="sign up"
-      class="hover-border-white"
-      onclick="window.open(`signin-up.html` , `_self`)"
-    />
-  </header>
+
   <!-- end of header -->
   <!-- start of main content -->
   <main>

@@ -1,5 +1,5 @@
 /* ------------start of general style -------------- */
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -66,13 +66,14 @@ aside img {
 #teacher-rating {
   color: gold;
   cursor: pointer;
+  justify-content: center !important;
 }
 #logos-container {
   font-size: 2rem;
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   color: rgb(95, 118, 160);
 }
 #logos-container i {
@@ -103,5 +104,5 @@ aside img {
 }
 .details li {
   padding: 0.3rem 0.5rem;
-}
+} */
 /* --------end of teacher details ------------- */
