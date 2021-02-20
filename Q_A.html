@@ -12,91 +12,95 @@
     <link rel="stylesheet" href="./style/searchcourses.css" />
 </head>
 <body>
-   <!-- start of header -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"
-      ><img src="media/logo.png" alt="logo" style="height: 10vh"
-    /></a>
-    <form class="form-inline my-2 my-lg-0 order-lg-1">
-      <input
-        class="form-control mr-sm-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-        Search
-      </button>
-    </form>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+    <!-- start of header -->
+    <header
+      class="container-fluid"
+      style="z-index: 1000; position: sticky; top: 0"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about_us.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact_us.html">Contact Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle nav-link"
-              style="background: none; border: none"
-              type="button"
-              id="dropdownMenu2"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Browse our courses
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/Logo_2.png" alt="logo" style="height: 10vh" />
+          </a>
+          <form class="form-inline my-2 my-lg-0 order-lg-1 d-flex flex-nowrap">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <a class="dropdown-item" href="search_courses.html"
-                >Primary School</a
-              >
-              <a class="dropdown-item" href="search_courses.html"
-                >Secondary School</a
-              >
-              <a class="dropdown-item" href="search_courses.html"
-                >High School</a
-              >
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="search_courses.html"
-            >Browse our teachers</a
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <nav class="navbar navbar-light bg-secondary">
-    <span class="navbar-brand mb-0 h1 ml-auto">
-      <a class="btn btn-primary" href="signin-up.html" role="button"
-        >Sign in</a
-      >
-      <a class="btn btn-primary" href="signin-up.html" role="button"
-        >Sign out</a
-      >
-    </span>
-  </nav>
-  <!-- end of header -->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact_us.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle nav-link"
+                    style="background: none; border: none"
+                    type="button"
+                    id="dropdownMenu2"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Browse our courses
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" href="search_courses.html"
+                      >Primary School</a
+                    >
+                    <a class="dropdown-item" href="search_courses.html"
+                      >Secondary School</a
+                    >
+                    <a class="dropdown-item" href="search_courses.html"
+                      >High School</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search_courses.html"
+                  >Browse our teachers</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <nav
+          class="navbar navbar-light col-12"
+          style="z-index: 1; background: rgba(128, 128, 128, 0.452)"
+        >
+          <span class="navbar-brand mb-0 h1 ml-auto" style="margin-left: auto">
+            <a class="btn btn-primary" href="signin-up.html">Sign in</a>
+            <a class="btn btn-primary" href="signin-up.html">Sign out</a>
+          </span>
+        </nav>
+      </div>
+    </header>
+    <!-- end of header -->
       <main>
         <aside class="asid_Q_A">
           <div class="row">
@@ -234,77 +238,101 @@
   </div>
       <!-- End Chat-->
     </main>
-        <!-- start of footer -->
-    <footer style="padding-top: 30px; padding-bottom: 30px" id="outer-footer">
-        <footer>
-          <!-- Start Single Footer Widget -->
-          <div class="class_div">
-            <div style="text-align: center">
-              <h2 style="color: rgb(178, 92, 199)">Information</h2>
-              <hr />
-  
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="./privacy.html">Privacy</a></li>
-              </ul>
-            </div>
-  
-            <div style="text-align: center">
-              <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
-              <hr />
-              <ul>
-                <li><i class="far fa-envelope"></i> test@test.com</li>
-                <li><i class="fas fa-phone"></i> 0123456789</li>
-              </ul>
-            </div>
-  
-            <div style="text-align: center">
-              <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
-              <hr />
-              <ul>
-                <li style="position: relative">
-                  <i
-                    class="far fa-envelope"
-                    style="
-                      position: absolute;
-                      left: 1rem;
-                      color: #121212;
-                      z-index: 1;
-                      top: 50%;
-                      transform: translateY(-50%);
-                    "
-                  ></i>
-                  <input type="text" placeholder="Your Mail !" id="input1" />
-                </li>
-                <li>
-                  <input type="button" value="Send email" id="button1" />
-                </li>
-              </ul>
+    <!-- start of footer -->
+    <footer class="container-fluid pt-3 pt-md-4 border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <h2 style="color: rgb(178, 92, 199)">Information</h2>
+            <hr />
+            <ul class="list-unstyled text-small" id="ul1">
+              <li><a class="link-secondary" href="./index.html">Home</a></li>
+              <li>
+                <a class="link-secondary" href="./about_us.html">About Us</a>
+              </li>
+              <li>
+                <a class="link-secondary" href="./contact_us.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
+            <hr />
+            <ul class="list-unstyled text-small" id="ul1">
+              <li>
+                <a class="link-secondary" href="#"
+                  ><i class="far fa-envelope"></i>test@test.com</a
+                >
+              </li>
+              <li>
+                <a class="link-secondary" href="#"
+                  ><i class="fas fa-phone"></i> 0123456789</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
+            <hr />
+            <ul class="list-unstyled text-small">
+              <li style="position: relative">
+                <i
+                  class="far fa-envelope"
+                  style="
+                    position: absolute;
+                    left: 1rem;
+                    color: #121212;
+                    z-index: 1;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  "
+                ></i>
+                <input
+                  class="rounded-lg"
+                  type="text"
+                  placeholder="Your Mail !"
+                  id="input1"
+                />
+              </li>
+              <li class="mt-1 text-center">
+                <input
+                  type="button"
+                  value="Send email"
+                  id="button1"
+                  class="my-2"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-8">
+            <div>
+              <div class="lower-fotter-div">
+                <span> CONTACT ON THE GO</span>
+                <span id="img-footer">
+                  <img src="./media/app-store.svg" />
+                  <img src="./media/google-play.svg" />
+                </span>
+              </div>
             </div>
           </div>
-        </footer>
-        <div id="lower-footer">
-          <div class="lower-fotter-div">
-            <span> CONTACT ON THE GO</span>
-            <span id="img-footer">
-              <img src="./media/app-store.svg" />
-              <img src="./media/google-play.svg" />
-            </span>
-          </div>
-          <div class="lower-fotter-div">
-            <span> CONNECT WITH US</span>
-            <p>
-              <i class="fab fa-facebook"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-linkedin-in"></i>
-            </p>
+          <div class="col-12 col-md-4">
+            <div class="lower-fotter-div">
+              <span> CONNECT WITH US</span>
+
+              <p>
+                <i class="fab fa-facebook p-1"></i>
+                <i class="fab fa-twitter p-1"></i>
+                <i class="fab fa-instagram p-1"></i>
+                <i class="fab fa-linkedin-in p-1"></i>
+              </p>
+            </div>
           </div>
         </div>
-      </footer>
-      <!-- end of footer -->
+      </div>
+    </footer>
+    <!-- end of footer -->
       <script src="./scripts/JS_Q_A.js"></script>
       <script src="./scripts/multipagesslider.js"></script>
       <script src="./scripts/home.js"></script>

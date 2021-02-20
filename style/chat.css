@@ -58,11 +58,10 @@
   opacity: 0.8;
   border-radius: 10%;
   opacity: 0.5;
-  
 }
 
 #FormHandler .cancel {
-  background-color:rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 #FormHandler .btn:hover,
@@ -70,15 +69,14 @@
   opacity: 4;
 }
 
-.btn1
-{
+.btn1 {
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-.container {
+.container1 {
   border: 2px solid rgb(223, 223, 223);
   background-color: #f1f1f1;
   border-radius: 5px;
@@ -91,7 +89,7 @@
   background-color: #ddd;
 }
 
-.container::after {
+.container1::after {
   content: "";
   clear: both;
   display: table;
@@ -107,10 +105,9 @@
   color: #999;
 }
 
-#fCansle
-{
+#fCansle {
   position: relative;
-  bottom: -.75rem;
+  bottom: -0.75rem;
   right: 28px;
   left: 3rem;
   color: #121212;
@@ -119,10 +116,9 @@
   font-size: 30px;
 }
 
-#fSend
-{
+#fSend {
   position: relative;
-  bottom: -.75rem;
+  bottom: -0.75rem;
   right: 28px;
   left: 3rem;
   color: #121212;
@@ -130,4 +126,3 @@
   top: 89%;
   font-size: 25px;
 }
-

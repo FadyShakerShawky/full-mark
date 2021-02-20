@@ -13,6 +13,7 @@ function showPrivacyHandler() {
   termsIframe.classList.add("hide");
   privacyContents.classList.remove("hide");
   termsContents.classList.add("hide");
+  console.log("hello");
 }
 function showTermsHandler() {
   privacyBtn.classList.remove("active-btn");
@@ -24,7 +25,3 @@ function showTermsHandler() {
 }
 privacyBtn.addEventListener("click", showPrivacyHandler);
 termsBtn.addEventListener("click", showTermsHandler);
-
-privacyIframe.onmouseenter = (event) => {
-  console.log(event);
-};

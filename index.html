@@ -27,14 +27,15 @@
   </head>
   <body>
     <!-- start of header -->
-    <header class="container-fluid position-fixed" style="z-index: 1000">
+    <header
+      class="container-fluid"
+      style="z-index: 1000; position: sticky; top: 0"
+    >
       <div class="row">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
-          <a class="navbar-brand" href="#"
-            >
-          <img src="media/Logo_2.png" alt="logo" style="height: 10vh"
-          />
-        </a>
+          <a class="navbar-brand" href="index.html">
+            <img src="media/Logo_2.png" alt="logo" style="height: 10vh" />
+          </a>
           <form class="form-inline my-2 my-lg-0 order-lg-1 d-flex flex-nowrap">
             <input
               class="form-control mr-sm-2"
@@ -106,14 +107,13 @@
           class="navbar navbar-light col-12"
           style="z-index: 1; background: rgba(128, 128, 128, 0.452)"
         >
-          <span class="navbar-brand mb-0 h1 ml-auto">
+          <span class="navbar-brand mb-0 h1 ml-auto" style="margin-left: auto">
             <a class="btn btn-primary" href="signin-up.html">Sign in</a>
             <a class="btn btn-primary" href="signin-up.html">Sign out</a>
           </span>
         </nav>
       </div>
     </header>
-
     <!-- end of header -->
     <!-- start of content -->
     <main>
