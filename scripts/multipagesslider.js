@@ -1,32 +1,16 @@
-let trending = document.querySelector("#trending");
-let popular = document.querySelector("#popular");
-let recent = document.querySelector("#recent");
-let trendinglink = document.querySelector("#trendinglink");
-let popularlink = document.querySelector("#popularlink");
-// let recentlink = document.querySelector("#recentlink");
-
-trendinglink.addEventListener("click", function () {
-  trendinglink.classList.add("visited");
-  popularlink.classList.remove("visited");
-  // recentlink.classList.remove("visited");
-  trending.setAttribute("class", "visible");
-  popular.setAttribute("class", "hidden");
-  recent.setAttribute("class", "hidden");
+$("#trendinglink").on("click", function () {
+  $("#trending").fadeIn(1500);
+  $("#popular").addClass("d-none");
+  $("#trending").removeClass("d-none");
+  $("#popular").addClass("d-none");
+  $("#trendinglink").addClass("visited");
+  $("#popularlink").removeClass("visited");
 });
-
-popularlink.addEventListener("click", function () {
-  trendinglink.classList.remove("visited");
-  popularlink.classList.add("visited");
-  // recentlink.classList.remove("visited");
-  trending.setAttribute("class", "hidden");
-  popular.setAttribute("class", "visible");
-  recent.setAttribute("class", "hidden");
+$("#popularlink").on("click", function () {
+  $("#popular").fadeIn(1500);
+  $("#trending").addClass("d-none");
+  $("#popular").removeClass("d-none");
+  $("#trending").addClass("d-none");
+  $("#popularlink").addClass("visited");
+  $("#trendinglink").removeClass("visited");
 });
-// recentlink.addEventListener("click", function () {
-//   trendinglink.classList.remove("visited");
-//   popularlink.classList.remove("visited");
-//   recentlink.classList.add("visited");
-//   trending.setAttribute("class", "hidden");
-//   popular.setAttribute("class", "hidden");
-//   recent.setAttribute("class", "visible");
-// });

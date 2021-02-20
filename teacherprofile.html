@@ -14,12 +14,6 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="./style/bootstrap/bootstrap.min.css"
-  />
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -34,72 +28,141 @@
   <body>
     <!-- start of header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#"><img src="media/logo.png" alt="logo" style="height: 10vh;"></a>
-      <form class="form-inline my-2 my-lg-0 order-lg-1 ">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"
+        ><img src="media/logo.png" alt="logo" style="height: 10vh"
+      /></a>
+      <form class="form-inline my-2 my-lg-0 order-lg-1">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <div class="dropdown">
-                  <button class="btn dropdown-toggle nav-link" style="background: none; border: none;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Browse our courses
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">Primary School</button>
-                    <button class="dropdown-item" type="button">Secondary School</button>
-                    <button class="dropdown-item" type="button">High School</button>
-                  </div>
-                </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Browse our teachers</a>
-            </li>
-          
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle nav-link"
+                style="background: none; border: none"
+                type="button"
+                id="dropdownMenu2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Browse our courses
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a class="dropdown-item" href="search_courses.html"
+                  >Primary School</a
+                >
+                <a class="dropdown-item" href="search_courses.html"
+                  >Secondary School</a
+                >
+                <a class="dropdown-item" href="search_courses.html"
+                  >High School</a
+                >
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search_courses.html"
+              >Browse our teachers</a
+            >
+          </li>
         </ul>
-        
       </div>
     </nav>
     <nav class="navbar navbar-light bg-secondary">
       <span class="navbar-brand mb-0 h1 ml-auto">
-          <a class="btn btn-primary" href="#" role="button">Sign in</a>
-          <a class="btn btn-primary" href="#" role="button">Sign out</a>
+        <a class="btn btn-primary" href="signin-up.html" role="button"
+          >Sign in</a
+        >
+        <a class="btn btn-primary" href="signin-up.html" role="button"
+          >Sign out</a
+        >
       </span>
     </nav>
     <!-- end of header -->
     <main>
       <div class="container-fluid">
         <div class="row justify-content-around">
-          
-          
-          <ul class="nav nav-tabs col-md-12 px-4 my-3" id="myTab" role="tablist">
-            
+          <ul
+            class="nav nav-tabs col-md-12 px-4 my-3"
+            id="myTab"
+            role="tablist"
+          >
             <li class="nav-item">
-              <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+              <a
+                class="nav-link active"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Profile</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="schedule-tab" data-toggle="tab" href="#schedule" role="tab" aria-controls="schedule" aria-selected="false">Schedule</a>
+              <a
+                class="nav-link"
+                id="schedule-tab"
+                data-toggle="tab"
+                href="#schedule"
+                role="tab"
+                aria-controls="schedule"
+                aria-selected="false"
+                >Schedule</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="badges-tab" data-toggle="tab" href="#badges" role="tab" aria-controls="badges" aria-selected="true">Badges</a>
+              <a
+                class="nav-link"
+                id="badges-tab"
+                data-toggle="tab"
+                href="#badges"
+                role="tab"
+                aria-controls="badges"
+                aria-selected="true"
+                >Badges</a
+              >
             </li>
           </ul>
           <div class="tab-content container-fluid" id="myTabContent">
-            <div class="tab-pane col-md-12 fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div
+              class="tab-pane col-md-12 fade show active"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
               <div class="row">
                 <aside class="col-md-4 text-center" id="teacher-card">
                   <img src="./media/TempProfile.jpg" alt="profile pic" />
@@ -109,7 +172,10 @@
                     ><i class="fas fa-star"></i><i class="fas fa-star"></i
                     ><i class="far fa-star"></i
                   ></span>
-                  <div id="logos-container" class="d-flex justify-content-around">
+                  <div
+                    id="logos-container"
+                    class="d-flex justify-content-around"
+                  >
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-google-plus-square"></i>
@@ -119,7 +185,9 @@
                   <div class="col-md-12" id="contentbody">
                     <h2>Teacher name</h2>
                     <div class="details">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
                       <span>www.facebook.com</span>
                       <span>www.Twitter.com</span>
                     </div>
@@ -137,207 +205,218 @@
                 </article>
               </div>
             </div>
-            <div class="tab-pane col-md-12 fade" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">
-              
-                <form method="GET" class="row justify-content-center">
-                  <select name="school" class="form-control col-md-3">
-                    <option>Primary school</option>
-                    <option>Secondary school</option>
-                    <option>High School school</option>
-                  </select>
-                  <select name="grade" class="form-control col-md-3">
-                    <option>Grade</option>
-                  </select>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-                <table class="table col-md-12 my-4">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Course</th>
-                      <th scope="col">Duration</th>
-                      <th scope="col">Days of week</th>
-                      <th scope="col">Start time</th>
-                      <th scope="col">End time</th>
-                      <th scope="col">Fees</th>
-                      <th scope="col">Enroll now</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Algebra</td>
-                      <td>01/09/2020-31/07/2021</td>
-                      <td>Sat , Mon , Wed</td>
-                      <td>10:00 am</td>
-                      <td>12:00 pm</td>
-                      <td>10$ /Month</td>
-                      <td><a class="btn btn-primary" href="#" role="button">Enroll</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Algebra</td>
-                      <td>01/09/2020-31/07/2021</td>
-                      <td>Sat , Mon , Wed</td>
-                      <td>10:00 am</td>
-                      <td>12:00 pm</td>
-                      <td>10$ /Month</td>
-                      <td><a class="btn btn-primary" href="#" role="button">Enroll</a></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Algebra</td>
-                      <td>01/09/2020-31/07/2021</td>
-                      <td>Sat , Mon , Wed</td>
-                      <td>10:00 am</td>
-                      <td>12:00 pm</td>
-                      <td>10$ /Month</td>
-                      <td><a class="btn btn-primary" href="#" role="button">Enroll</a></td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
+            <div
+              class="tab-pane col-md-12 fade"
+              id="schedule"
+              role="tabpanel"
+              aria-labelledby="schedule-tab"
+            >
+              <form method="GET" class="row justify-content-center">
+                <select name="school" class="form-control col-md-3">
+                  <option>Primary school</option>
+                  <option>Secondary school</option>
+                  <option>High School school</option>
+                </select>
+                <select name="grade" class="form-control col-md-3">
+                  <option>Grade</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <table class="table col-md-12 my-4">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Course</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Days of week</th>
+                    <th scope="col">Start time</th>
+                    <th scope="col">End time</th>
+                    <th scope="col">Fees</th>
+                    <th scope="col">Enroll now</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Algebra</td>
+                    <td>01/09/2020-31/07/2021</td>
+                    <td>Sat , Mon , Wed</td>
+                    <td>10:00 am</td>
+                    <td>12:00 pm</td>
+                    <td>10$ /Month</td>
+                    <td>
+                      <a class="btn btn-primary" href="#" role="button"
+                        >Enroll</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Algebra</td>
+                    <td>01/09/2020-31/07/2021</td>
+                    <td>Sat , Mon , Wed</td>
+                    <td>10:00 am</td>
+                    <td>12:00 pm</td>
+                    <td>10$ /Month</td>
+                    <td>
+                      <a class="btn btn-primary" href="#" role="button"
+                        >Enroll</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Algebra</td>
+                    <td>01/09/2020-31/07/2021</td>
+                    <td>Sat , Mon , Wed</td>
+                    <td>10:00 am</td>
+                    <td>12:00 pm</td>
+                    <td>10$ /Month</td>
+                    <td>
+                      <a class="btn btn-primary" href="#" role="button"
+                        >Enroll</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="tab-pane col-md-12 fade " id="badges" role="tabpanel" aria-labelledby="badges-tab">
-              <div class="row">
-
-              </div>
+            <div
+              class="tab-pane col-md-12 fade"
+              id="badges"
+              role="tabpanel"
+              aria-labelledby="badges-tab"
+            >
+              <div class="row"></div>
             </div>
           </div>
         </div>
       </div>
-     
-      
+
       <!-- Start Chat-->
       <input
-      type="button"
-      value="Chat"
-      name="chat"
-      class="open-button"
-      onclick="openchat()"
-    />
+        type="button"
+        value="Chat"
+        name="chat"
+        class="open-button"
+        onclick="openchat()"
+      />
 
-    <div class="chat-popup" id="FormHandler">
-      <h1><span style="color:rgb(170, 67, 170);">AcadHool</span> Chat</h1>
-      <div id="msgs-container">
-        <div class="container2">
-          <label>no3man</label>
-          <p>azyk ya fady</p>
-          <span class="timeNo3man">11:00</span>
+      <div class="chat-popup" id="FormHandler">
+        <h1><span style="color: rgb(170, 67, 170)">AcadHool</span> Chat</h1>
+        <div id="msgs-container">
+          <div class="container">
+            <label>no3man</label>
+            <p>azyk ya fady</p>
+            <span class="timeNo3man">11:00</span>
+          </div>
+
+          <div class="container fady">
+            <label>fady</label>
+            <p>no3man azyk 3aml eh</p>
+            <span class="timeFady">11:01</span>
+          </div>
+
+          <div class="container">
+            <label>no3man</label>
+            <p>ana zy l foool</p>
+            <span class="timeNo3man">11:02</span>
+          </div>
         </div>
-
-        <div class="container fady">
-          <label>fady</label>
-          <p>no3man azyk 3aml eh</p>
-          <span class="timeFady">11:01</span>
-        </div>
-
-        <div class="container2">
-          <label>no3man</label>
-          <p>ana zy l foool</p>
-          <span class="timeNo3man">11:02</span>
+        <textarea
+          placeholder="texting with your teacher....."
+          name="msg"
+          id="msgTextArea"
+          required
+        ></textarea>
+        <div class="btn1">
+          <i class="fas fa-times" id="fCansle"></i>
+          <input
+            type="button"
+            name="close"
+            class="btn cancel"
+            onclick="closechat()"
+          />
+          <i class="fas fa-paper-plane" id="fSend"></i>
+          <input
+            type="button"
+            onclick="messageHandler()"
+            name="send"
+            class="btn"
+          />
         </div>
       </div>
-      <textarea
-        placeholder="texting with your teacher....."
-        name="msg"
-        id="msgTextArea"
-        required
-      ></textarea>
-<div class="btn1">
-  <i class="fas fa-times" id ="fCansle"></i>
-     <input
-        type="button"
-        name="close"
-        class="btn cancel"
-        onclick="closechat()"
-      />
-      <i class="fas fa-paper-plane" id="fSend" ></i>
-      <input
-        type="button"
-        onclick="messageHandler()"
-        name="send"
-        class="btn"
-      />
-    </div>
-  </div>
       <!-- End Chat-->
     </main>
     <!-- start of footer -->
-    <footer class="container-fluid pt-3 my-md-5 pt-md-4 border-top">
-      <div class="row">
-        <div class="col-6 col-md">
-          <h2 style="color: rgb(178, 92, 199)">Information</h2>
-          <hr />
-          <ul class="list-unstyled text-small" id="ul1">
-            <li><a class="link-secondary" href="./index.html">Home</a></li>
-            <li><a class="link-secondary" href="./about_us.html">About Us</a></li>
-            <li><a class="link-secondary" href="./contact_us.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
-          <hr />
-          <ul class="list-unstyled text-small" id="ul1">
-            <li><a class="link-secondary" href="#"><i class="far fa-envelope"></i>test@test.com</a></li>
-            <li><a class="link-secondary" href="#"><i class="fas fa-phone"></i> 0123456789</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
-          <hr />
-          <ul class="list-unstyled text-small">
-            <li style="position: relative">
-              <i
-                class="far fa-envelope"
-                style="
-                  position: absolute;
-                  left: 1rem;
-                  color: #121212;
-                  z-index: 1;
-                  top: 50%;
-                  transform: translateY(-50%);
-                "
-              ></i>
-              <input class="rounded-lg"  type="text" placeholder="Your Mail !" id="input1" /></li>
-              <li class="mt-1 text-center">
-                  <input type="button" value="Send email" id="button1" />
-                </li>
-          </ul>
-        </div>
+    <footer style="padding-top: 30px; padding-bottom: 30px" id="outer-footer">
+      <footer>
+        <!-- Start Single Footer Widget -->
+        <div class="class_div">
+          <div style="text-align: center">
+            <h2 style="color: rgb(178, 92, 199)">Information</h2>
+            <hr />
 
-        <div class="container">
-          <div class="row ml-5">
-              <div class=" col-12 col-md-8 pl-5 mt-3">
-                  <div  >
-                  
-                      <div class="lower-fotter-div">
-                        <span> CONTACT ON THE GO</span>
-                        <span id="img-footer">
-                          <img src="./media/app-store.svg" />
-                          <img src="./media/google-play.svg" />
-                        </span>
-                      </div>
-                    </div>
-              </div>
- 
-              <div class="col-12 col-md-4 pl-5 mt-3">
-                  <div class="lower-fotter-div">
-                      <span> CONNECT WITH US</span>
-                    
-                        <p>
-                          <i class="fab fa-facebook p-1"></i>
-                          <i class="fab fa-twitter p-1"></i>
-                          <i class="fab fa-instagram p-1"></i>
-                          <i class="fab fa-linkedin-in p-1"></i>
-                        </p>
-                    
-                      
-                    </div>
-              </div>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about_us.html">About Us</a></li>
+              <li><a href="./contact_us.html">Contact Us</a></li>
+              <li><a href="./privacy.html">Privacy</a></li>
+            </ul>
           </div>
+
+          <div style="text-align: center">
+            <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
+            <hr />
+            <ul>
+              <li><i class="far fa-envelope"></i> test@test.com</li>
+              <li><i class="fas fa-phone"></i> 0123456789</li>
+            </ul>
+          </div>
+
+          <div style="text-align: center">
+            <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
+            <hr />
+            <ul>
+              <li style="position: relative">
+                <i
+                  class="far fa-envelope"
+                  style="
+                    position: absolute;
+                    left: 1rem;
+                    color: #121212;
+                    z-index: 1;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  "
+                ></i>
+                <input type="text" placeholder="Your Mail !" id="input1" />
+              </li>
+              <li>
+                <input type="button" value="Send email" id="button1" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div id="lower-footer">
+        <div class="lower-fotter-div">
+          <span> CONTACT ON THE GO</span>
+          <span id="img-footer">
+            <img src="./media/app-store.svg" />
+            <img src="./media/google-play.svg" />
+          </span>
+        </div>
+        <div class="lower-fotter-div">
+          <span> CONNECT WITH US</span>
+          <p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </p>
+        </div>
       </div>
-    </div>
     </footer>
     <!-- end of footer -->
     <script src="./scripts/home.js"></script>

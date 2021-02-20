@@ -9,34 +9,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootsrtap 4.6.0 cdn -->
     <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
-    
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"
-  ></script>
-  <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
 
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="./style/bootstrap/bootstrap.min.css"
-  />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
   </head>
 
   <body>
-
-<!--   The code is divided into 3 main section [ course detailes - Course Content- scrollButton ]
+    <!--   The code is divided into 3 main section [ course detailes - Course Content- scrollButton ]
     [1] Course detaile : it is the top section of the page.
     [2] Course Content : is divided into 
                     (1) What you'll learn 
@@ -49,107 +42,156 @@
 
   -->
 
-   <!-- start of header -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"><img src="media/logo.png" alt="logo" style="height: 10vh;"></a>
-    <form class="form-inline my-2 my-lg-0 order-lg-1 ">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <!-- start of header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"
+        ><img src="media/logo.png" alt="logo" style="height: 10vh"
+      /></a>
+      <form class="form-inline my-2 my-lg-0 order-lg-1">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
       </form>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="about_us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
           </li>
           <li class="nav-item dropdown">
             <div class="dropdown">
-                <button class="btn dropdown-toggle nav-link" style="background: none; border: none;" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Browse our courses
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <button class="dropdown-item" type="button">Primary School</button>
-                  <button class="dropdown-item" type="button">Secondary School</button>
-                  <button class="dropdown-item" type="button">High School</button>
-                </div>
+              <button
+                class="btn dropdown-toggle nav-link"
+                style="background: none; border: none"
+                type="button"
+                id="dropdownMenu2"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Browse our courses
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a class="dropdown-item" href="search_courses.html"
+                  >Primary School</a
+                >
+                <a class="dropdown-item" href="search_courses.html"
+                  >Secondary School</a
+                >
+                <a class="dropdown-item" href="search_courses.html"
+                  >High School</a
+                >
               </div>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Browse our teachers</a>
+            <a class="nav-link" href="search_courses.html"
+              >Browse our teachers</a
+            >
           </li>
-        
-      </ul>
-      
-    </div>
-  </nav>
-  <nav class="navbar navbar-light bg-secondary">
-    <span class="navbar-brand mb-0 h1 ml-auto">
-        <a class="btn btn-primary" href="#" role="button">Sign in</a>
-        <a class="btn btn-primary" href="#" role="button">Sign out</a>
-    </span>
-  </nav>
-  <!-- end of header -->
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-light bg-secondary">
+      <span class="navbar-brand mb-0 h1 ml-auto">
+        <a class="btn btn-primary" href="signin-up.html" role="button"
+          >Sign in</a
+        >
+        <a class="btn btn-primary" href="signin-up.html" role="button"
+          >Sign out</a
+        >
+      </span>
+    </nav>
+    <!-- end of header -->
 
     <!--------------------------- Start Course Detailes --------------------------------------------------------->
-<div class="container-fluid">
-  <div class="row">
-    <div class="courseNaDetails col-lg-12 p-5 mb-5 bg-dark text-white">
-      <h1 class="courseName">React and Typescript: Build a Portfolio Project</h1>
-      <h5 class="brief mb-3">
-        Expand your portfolio of projects by building a complex app with the
-        latest web technologies.
-      </h5>
-      <span class="rate p-2 bg-warning text-dark rounded-sm mr-2 font-weight-bold">
-        Highest Rated
-      </span>
-      <span class="rateNumbers mb-2"
-        >4.0
-        <i class="fas fa-star text-warning"></i>
-        <i class="fas fa-star text-warning"></i>
-        <i class="fas fa-star text-warning"></i>
-        <i class="fas fa-star text-warning"></i>
-        <i class="far fa-star text-warning"></i>
-      </span>
-    
-      <span class="noOfRatings">( 377 ratings ) 5,006 students</span>
-      <div class="author mt-3">
-        Created By
-        <a href="" class="authorName text-info ml-1">John Wick</a>
-      </div>
-      <div class="details mt-3 col-lg-12 col-sm-12">
-        <span class="update"
-          ><i class="far fa-edit"></i> Last updated 2/2021
+    <div class="container-fluid">
+      <div class="row">
+        <div class="courseNaDetails col-lg-12 p-5 mb-5 bg-dark text-white">
+          <h1 class="courseName">
+            React and Typescript: Build a Portfolio Project
+          </h1>
+          <h5 class="brief mb-3">
+            Expand your portfolio of projects by building a complex app with the
+            latest web technologies.
+          </h5>
+          <span
+            class="rate p-2 bg-warning text-dark rounded-sm mr-2 font-weight-bold"
+          >
+            Highest Rated
           </span>
-        <span class="lang ml-4"
-          ><i class="fas fa-globe-americas"></i> English
-        </span>
-        <span class="subtitle ml-4"
-          ><i class="far fa-closed-captioning"></i> English [Auto]
+          <span class="rateNumbers mb-2"
+            >4.0
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star text-warning"></i>
           </span>
-      </div>
-      <div class="btnContainer mt-3 col-sm-12">
-        <button type="button" class="btn btn-outline-light mr-2 text-wight border border-white">
-          Wishlist <i class="far fa-heart"></i>
-        </button>
-        <button type="button" class="btn btn-outline-light mr-2  text-wight border border-white">
-          Share <i class="fas fa-share"></i>
-        </button>
-        <button type="button" class="btn btn-outline-light text-wight border border-white">
-          Gift this course <i class="fas fa-hand-holding-heart"></i>
-        </button>
+
+          <span class="noOfRatings">( 377 ratings ) 5,006 students</span>
+          <div class="author mt-3">
+            Created By
+            <a href="" class="authorName text-info ml-1">John Wick</a>
+          </div>
+          <div class="details mt-3 col-lg-12 col-sm-12">
+            <span class="update"
+              ><i class="far fa-edit"></i> Last updated 2/2021
+            </span>
+            <span class="lang ml-4"
+              ><i class="fas fa-globe-americas"></i> English
+            </span>
+            <span class="subtitle ml-4"
+              ><i class="far fa-closed-captioning"></i> English [Auto]
+            </span>
+          </div>
+          <div class="btnContainer mt-3 col-sm-12">
+            <button
+              type="button"
+              class="btn btn-outline-light mr-2 text-wight border border-white"
+            >
+              Wishlist <i class="far fa-heart"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light mr-2 text-wight border border-white"
+            >
+              Share <i class="fas fa-share"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light text-wight border border-white"
+            >
+              Gift this course <i class="fas fa-hand-holding-heart"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     <!-------------------------------- End Course Detailes ------------------------------------------------------>
 
@@ -160,7 +202,7 @@
         <div class="col-lg-8">
           <!-- Start (What you'll learn) div -->
           <div
-            class="container p-4 bg-light  rounded-lg shadow p-4 mb-5 bg-white "
+            class="container p-4 bg-light rounded-lg shadow p-4 mb-5 bg-white"
           >
             <p class="whatLearn font-weight-bold">What you'll learn</p>
             <div class="row">
@@ -215,9 +257,10 @@
           <!-- Start Accordion -->
           <div class="container text-center mb-5">
             <p class="courseContent mb-4">Course content</p>
-            <p class="courseDuration">27 sections • 388 lectures • 29h 16m total length</p>
+            <p class="courseDuration">
+              27 sections • 388 lectures • 29h 16m total length
+            </p>
 
-            
             <div class="container">
               <div class="row">
                 <div class="col-md-offset-1 col-md-9 col-sm-12">
@@ -376,15 +419,12 @@
                 </div>
               </div>
             </div>
-            
           </div>
           <!-- End Accordion -->
 
           <!-- Start Requirements -->
-          <div
-            class="container bg-light shadow p-4 mb-4 bg-white mb-5"
-          >
-            <p class="requirements  font-weight-bold">Requirements</p>
+          <div class="container bg-light shadow p-4 mb-4 bg-white mb-5">
+            <p class="requirements font-weight-bold">Requirements</p>
             <div class="reqPoints">
               <ul>
                 <li>Basic knowledge of React and Redux</li>
@@ -402,7 +442,10 @@
           <div class="container bg-light shadow p-4 mb-4 bg-white mb-5">
             <p class="desc font-weight-bold">Description</p>
             <div class="row">
-              <p class="decWords p-3" style="line-height: 30px; font-size: larger">
+              <p
+                class="decWords p-3"
+                style="line-height: 30px; font-size: larger"
+              >
                 You've learned React, but what now? Time to build an awesome
                 project for your portfolio! Prove your React knowledge to
                 employers. There are hundreds of resources online for teaching
@@ -436,9 +479,7 @@
                 covered in this course:
               </p>
               <ul class="descUl">
-                <li>
-                  Master the use of React, Redux, and Typescript together
-                </li>
+                <li>Master the use of React, Redux, and Typescript together</li>
                 <li>
                   Build a complex and interesting app using a package-based
                   architecture
@@ -469,7 +510,7 @@
                   use it
                 </li>
               </ul>
-              <p class="p-3" style="font-size: 18px;">
+              <p class="p-3" style="font-size: 18px">
                 I built this course to help you apply your React skills. I built
                 this course to help you apply your React skills. Sign up today
                 and build an incredible app that will prove your knowledge.
@@ -484,11 +525,19 @@
           </div>
 
           <!-- End Description -->
-        </div><!-- closing div for <div class="col-lg-9"> -->
+        </div>
+        <!-- closing div for <div class="col-lg-9"> -->
 
-          <!-- Start Side Card -->
-        <div class="card shadow p-4 mb-4 bg-white col-lg-3 offset-1" style="height: 81rem;">
-          <img class="card-img-top" src="./media/react.jpg" alt="Card image cap" />
+        <!-- Start Side Card -->
+        <div
+          class="card shadow p-4 mb-4 bg-white col-lg-3 offset-1"
+          style="height: 81rem"
+        >
+          <img
+            class="card-img-top"
+            src="./media/react.jpg"
+            alt="Card image cap"
+          />
           <div class="card-body">
             <h3 class="card-title text-center">
               React and Typescript: Build a Portfolio Project
@@ -553,84 +602,7 @@
 
     <!------------------------------- End Scroll Buttom ----------------------------------------------->
 
-
     <!-- Accordion -->
-
-    <footer class="container-fluid pt-3 my-md-5 pt-md-4 border-top">
-      <div class="row">
-        <div class="col-6 col-md">
-          <h2 style="color: rgb(178, 92, 199)">Information</h2>
-          <hr />
-          <ul class="list-unstyled text-small" id="ul1">
-            <li><a class="link-secondary" href="./index.html">Home</a></li>
-            <li><a class="link-secondary" href="./about_us.html">About Us</a></li>
-            <li><a class="link-secondary" href="./contact_us.html">Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
-          <hr />
-          <ul class="list-unstyled text-small" id="ul1">
-            <li><a class="link-secondary" href="#"><i class="far fa-envelope"></i>test@test.com</a></li>
-            <li><a class="link-secondary" href="#"><i class="fas fa-phone"></i> 0123456789</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
-          <hr />
-          <ul class="list-unstyled text-small">
-            <li style="position: relative">
-              <i
-                class="far fa-envelope"
-                style="
-                  position: absolute;
-                  left: 1rem;
-                  color: #121212;
-                  z-index: 1;
-                  top: 50%;
-                  transform: translateY(-50%);
-                "
-              ></i>
-              <input class="rounded-lg"  type="text" placeholder="Your Mail !" id="input1" /></li>
-              <li class="mt-1 text-center">
-                  <input type="button" value="Send email" id="button1" />
-                </li>
-          </ul>
-        </div>
-
-        <div class="container">
-          <div class="row ml-5">
-              <div class=" col-12 col-md-8 pl-5 mt-3">
-                  <div  >
-                  
-                      <div class="lower-fotter-div">
-                        <span> CONTACT ON THE GO</span>
-                        <span id="img-footer">
-                          <img src="./media/app-store.svg" />
-                          <img src="./media/google-play.svg" />
-                        </span>
-                      </div>
-                    </div>
-              </div>
- 
-              <div class="col-12 col-md-4 pl-5 mt-3">
-                  <div class="lower-fotter-div">
-                      <span> CONNECT WITH US</span>
-                    
-                        <p>
-                          <i class="fab fa-facebook p-1"></i>
-                          <i class="fab fa-twitter p-1"></i>
-                          <i class="fab fa-instagram p-1"></i>
-                          <i class="fab fa-linkedin-in p-1"></i>
-                        </p>
-                    
-                      
-                    </div>
-              </div>
-          </div>
-      </div>
-    </div>
-    </footer>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.12.0.min.js"

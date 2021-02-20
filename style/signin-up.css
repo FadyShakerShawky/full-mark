@@ -4,15 +4,16 @@ body {
   --color-secondary: #501875;
   --color-error: #cc3333;
   --border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
   font-size: 1rem;
   background: url(../media/pexels-katerina-holmes-5905959.jpg);
   background-size: cover;
 }
 main {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #container {
   width: 400px;
@@ -22,6 +23,7 @@ main {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
   background: #ffffff;
+  margin: auto;
 }
 
 .container,
