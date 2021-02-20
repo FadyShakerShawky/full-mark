@@ -34,7 +34,7 @@
 
 /* ---------- end of color custom fonts ------------- */
 /* -------------- start of header ------------------ */
-header {
+/* header {
   height: 14vh;
   background: #e9e9e9;
   display: flex;
@@ -45,7 +45,7 @@ header {
   color: #121212;
   box-shadow: 0px 1px 15px #121212;
   width: 100vw;
-}
+} */
 header a img {
   height: 10vh;
   padding: 0;
@@ -226,6 +226,10 @@ a {
 }
 #lower-footer img {
   width: 10vw;
+}
+#ul1 a
+{
+  color: white;
 }
 .lower-fotter-div {
   display: flex;

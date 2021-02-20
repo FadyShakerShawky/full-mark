@@ -1,401 +1,398 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search</title>
-  <link rel="stylesheet" href="./style/searchcourses.css" />
-  <link href="./fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./style/common.css">
-  <link rel="stylesheet" href="./style/chat.css" />
-  <link rel="stylesheet" href="./style/porto.css" />
-  <script
-  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-  crossorigin="anonymous"
-></script>
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-crossorigin="anonymous"
-/>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-  crossorigin="anonymous"
-></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses</title>
+  <link rel="stylesheet" href="./style/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/search_courses.css">
+  <link rel="stylesheet" href="./style/common.css" />
+
+  <script src="./scripts/bootstrap.bundle.min.js"></script>
 </head>
 <body>
    <!-- start of header -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"
-      ><img src="media/logo.png" alt="logo" style="height: 10vh"
-    /></a>
-    <form class="form-inline my-2 my-lg-0 order-lg-1">
-      <input
-        class="form-control mr-sm-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-        Search
-      </button>
-    </form>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarTogglerDemo01"
-      aria-controls="navbarTogglerDemo01"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html"
-            >Home <span class="sr-only">(current)</span></a
+   <header class="container-fluid position-fixed" style="z-index: 1000">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-12">
+        <a class="navbar-brand" href="#"
           >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about_us.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact_us.html">Contact Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <div class="dropdown">
-            <button
-              class="btn dropdown-toggle nav-link"
-              style="background: none; border: none"
-              type="button"
-              id="dropdownMenu2"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Browse our courses
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <a class="dropdown-item" href="search_courses.html"
-                >Primary School</a
+        <img src="media/Logo_2.png" alt="logo" style="height: 10vh"
+        />
+      </a>
+        <form class="form-inline my-2 my-lg-0 order-lg-1 d-flex flex-nowrap">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle nav-link"
+                  style="background: none; border: none"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Browse our courses
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <a class="dropdown-item" href="search_courses.html"
+                    >Primary School</a
+                  >
+                  <a class="dropdown-item" href="search_courses.html"
+                    >Secondary School</a
+                  >
+                  <a class="dropdown-item" href="search_courses.html"
+                    >High School</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search_courses.html"
+                >Browse our teachers</a
               >
-              <a class="dropdown-item" href="search_courses.html"
-                >Secondary School</a
-              >
-              <a class="dropdown-item" href="search_courses.html"
-                >High School</a
-              >
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="search_courses.html"
-            >Browse our teachers</a
-          >
-        </li>
-      </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav
+        class="navbar navbar-light col-12"
+        style="z-index: 1; background: rgba(128, 128, 128, 0.452)"
+      >
+        <span class="navbar-brand mb-0 h1 ml-auto" style="margin-left: auto;">
+          <a class="btn btn-primary" href="signin-up.html">Sign in</a>
+          <a class="btn btn-primary" href="signin-up.html">Sign out</a>
+        </span>
+      </nav>
     </div>
-  </nav>
-  <nav class="navbar navbar-light bg-secondary">
-    <span class="navbar-brand mb-0 h1 ml-auto">
-      <a class="btn btn-primary" href="signin-up.html" role="button"
-        >Sign in</a
-      >
-      <a class="btn btn-primary" href="signin-up.html" role="button"
-        >Sign out</a
-      >
-    </span>
-  </nav>
+  </header>
+
   <!-- end of header -->
-  <!-- start of main content -->
-  <main>
-    <aside style="background-color:#bbb;">
-      <div class="row">
-          <div class="left" style="background-color:#bbb;">
-            <input type="text" id="Search" onkeyup="Search_k()" placeholder="Search.." title="Type in a category">
-            <div id="DropMenu">
-              <li><a href="#"  onclick="Sub_ul1()">Teachers</a></li>
-              <div style="background-color:rgb(238, 238, 238);"> 
-              <ul  id="DropMenu2">
-                <li ><a href="#">Alaa
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </a>
-                </li>
-               
-                <li><a href="#">Ahmed
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </a>
-                </li>
-                <li><a href="#">Sara
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </a>
-                </li>
-                <li><a href="#">Fady
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </a>
-                </li>
-                <li><a href="#">Abnoub
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <span class="fa fa-star"></span>
-                </a></li>
-              </ul>
-            </div>
+  <main  style="margin-top: 50vh;">
+<aside>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Primary School
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      First Grade
+                    </label>
+                  </div>
 
-            <div>
-              <li><a href="#"  onclick="Sub_ul2()" >subjects</a></li>
-              <ul  id="DropMenu3" style="background-color:rgb(238, 238, 238);">
-                <li><a href="#">Arabic</a></li>
-                <li><a href="#">Math</a></li>
-                <li><a href="#">Camistry</a></li>
-              </ul>
-              <li><a href="./Q_A.html">Questions and Answers</a></li>
-              <li><a href="#">References</a></li>
-              <li><a href="#" onclick="Sub_ul3()">Revision Subjects</a></li>
-              <ul  id="DropMenu4" style="background-color:rgb(238, 238, 238);">
-                <li><a href="#">Primary stage</a></li>
-                <li><a href="#">middle School</a></li>
-                <li><a href="#">High school</a></li>
-              </ul>
-              <li><a href="#">Exams</a></li>
-            </ul>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Second Grade
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Third Grade
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Forth Grade
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Fifth Grade
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Six Grade
+                    </label>
+                  </div>
           </div>
         </div>
-    </aside>
-    <div style="height: 100vh; overflow-y: scroll; overflow-x: hidden;">
-      <div >
-        <div >
-          <input type="text" id="Search1" onkeyup="Search_l()" placeholder="Search.." title="Type in a category">
-          <div id="search-items" style="width: 80vw; height: 293vh">
-              <li>
-              <div style="width: 100%; height: 50vh; margin: 2vh;">
-                <center>
-                  <img src="./media/math.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
-                  <p style="margin-top: 2vw;"><h3>Course Math</h3></p>
-                <br>
-                <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
-                <br>
-                <p>
-                  <a href="porto.html"><button href = >Show Details</button></a></p></center>
-                <br>
-                <hr>
-              </div>
-            </li>
-            <li>
-              <!-- remove style after finish -->
-              <div style="width: 70vw; height: 50vh">
-                <center>
-                  <img src="./media/science (2).jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
-                  <p style="margin-top: 20px;"><h3>Course Science</h3></p>
-                  <br>
-                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
-                  <br>
-                  <p><button>Show Details</button></p></center>
-                  <br>
-                  <hr>
-              </div>
-            </li>
-      
-            <li>
-              <!-- remove style after finish -->
-              <div style="width: 70vw; height: 50vh">
-                <center>
-                  <img src="./media/geography.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
-                  <p style="margin-top: 20px;"><h3>Course Geography</h3></p>
-                  <br>
-                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
-                  <br>
-                  <p><button>Show Details</button></p></center>
-                  <br>
-                  <hr>
-              </div>
-            </li>
-      
-            <li>
-              <div style="width: 70vw; height: 50vh">
-                <center>
-                  <img src="./media/arabic.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
-                  <p style="margin-top: 20px;"><h3>Course Arabic</h3></p>
-                  <br>
-                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
-                  <br>
-                  <p><button>Show Details</button></p></center>
-                  <br>
-                  <hr>
-              </div>
-            </li>
-      
-            <li>
-              <div style="width: 70vw; height: 40vh">
-                <center>
-                  <img src="./media/art.jpeg" style="width: 20vw; height: 20vh; border-radius: 20%;">
-                  <p style="margin-top: 20px;"><h3>Art </h3></p>
-                  <br>
-                  <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
-                  <br>
-                  <p><button>Show Details</button></p></center>
-                  <br>
-                  <hr>
-              </div>
-            </li>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Secondary School
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      First Grade
+                    </label>
+                  </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Second Grade
+                    </label>
+                  </div>
                   
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Third Grade
+                    </label>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                High school
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      First Grade
+                    </label>
+                  </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Second Grade
+                    </label>
+                  </div>
+                  
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Third Grade
+                    </label>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Question and Answer
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Primary Scool
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Secondary Scool
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      High Scool
+                    </label>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Rating Teachers
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Math
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Science
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Arabic
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Computer
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Geography
+                    </label>
+                  </div>
+
+              </div>
+            </div>
           </div>
     </div>
+</aside>
+
+<div class="container-fluid">
+<nav>
+<div class="row">
+    <div class="nav nav-tabs gap-2 m-3" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Ratting Math</button>
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Question</button>
+      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">First Grade</button>
+    </div>
+</div>
+  </nav>
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="./media/computer.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+        <div class="card-body">
+          <h5 class="card-title">Computer</h5>
+          <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+          <a href="#" class="btn">Go Course</a>
+        </div>
       </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./media/geography.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+        <div class="card-body">
+          <h5 class="card-title">Geography</h5>
+          <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+          <a href="#" class="btn">Go Course</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./media/math.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+        <div class="card-body">
+          <h5 class="card-title">Math</h5>
+          <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+          <a href="#" class="btn">Go Course</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="./media/science.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+        <div class="card-body">
+          <h5 class="card-title">Science</h5>
+          <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+          <a href="#" class="btn">Go Course</a>
       </div>   
-      <!-- Start Chat-->
-      <input
-      type="button"
-      value="Chat"
-      name="chat"
-      class="open-button"
-      onclick="openchat()"
-    />
-
-    <div class="chat-popup" id="FormHandler">
-      <h1><span style="color:rgb(170, 67, 170);">AcadHool</span> Chat</h1>
-      <div id="msgs-container">
-        <div class="container">
-          <label>no3man</label>
-          <p>azyk ya fady</p>
-          <span class="timeNo3man">11:00</span>
-        </div>
-
-        <div class="container fady">
-          <label>fady</label>
-          <p>no3man azyk 3aml eh</p>
-          <span class="timeFady">11:01</span>
-        </div>
-
-        <div class="container">
-          <label>no3man</label>
-          <p>ana zy l foool</p>
-          <span class="timeNo3man">11:02</span>
-        </div>
-      </div>
-      <textarea
-        placeholder="texting with your teacher....."
-        name="msg"
-        id="msgTextArea"
-        required
-      ></textarea>
-<div class="btn1">
-  <i class="fas fa-times" id ="fCansle"></i>
-     <input
-        type="button"
-        name="close"
-        class="btn cancel"
-        onclick="closechat()"
-      />
-      <i class="fas fa-paper-plane" id="fSend" ></i>
-      <input
-        type="button"
-        onclick="messageHandler()"
-        name="send"
-        class="btn"
-      />
     </div>
   </div>
-      <!-- End Chat--> 
-  </main>
-  <!-- end of main content -->
 
-  <!-- start of footer -->
-  <footer style="padding-top: 30px; padding-bottom: 30px;" id="outer-footer" style="background: red;">
-    <footer>
-      <!-- Start Single Footer Widget -->
-      <div class="class_div">
-        <div style="text-align: center">
-          <h2 style="color: rgb(178, 92, 199)">Information</h2>
-          <hr />
-
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-              <li><a href="./about_us.html">About Us</a></li>
-              <li><a href="./contact_us.html">Contact Us</a></li>
-              <li><a href="./privacy.html">Privacy</a></li>
-          </ul>
-        </div>
-
-        <div style="text-align: center">
-          <h2 style="color: rgb(178, 92, 199)">Contact Us</h2>
-          <hr />
-          <ul>
-            <li><i class="far fa-envelope"></i> test@test.com</li>
-            <li><i class="fas fa-phone"></i> 0123456789</li>
-          </ul>
-        </div>
-
-        <div style="text-align: center">
-          <h2 style="color: rgb(178, 92, 199)">Send Email</h2>
-          <hr />
-          <ul>
-            <li style="position: relative">
-              <i
-                class="far fa-envelope"
-                style="
-                  position: absolute;
-                  left: 1rem;
-                  color: #121212;
-                  z-index: 1;
-                  top: 50%;
-                  transform: translateY(-50%);
-                "
-              ></i>
-              <input type="text" placeholder="Your Mail !" id="input1" />
-            </li>
-            <li>
-              <input type="button" value="Send email" id="button1" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <div id="lower-footer">
-      <div class="lower-fotter-div">
-        <span> CONTACT ON THE GO</span>
-        <span id="img-footer">
-          <img src="./media/app-store.svg" />
-          <img src="./media/google-play.svg" />
-        </span>
-      </div>
-      <div class="lower-fotter-div">
-        <span> CONNECT WITH US</span>
-        <p>
-          <i class="fab fa-facebook"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
-        </p>
+  <div class="col">
+    <div class="card">
+      <img src="./media/computer.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+      <div class="card-body">
+        <h5 class="card-title">Computer</h5>
+        <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+        <a href="#" class="btn">Go Course</a>
       </div>
     </div>
-  </footer>
-  <!-- end of footer -->
-  <script src="./scripts/home.js"></script>
-  <script src="./scripts/Searching_JavaScript.js"></script> 
-  <script src="./scripts/chat.js"></script>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./media/geography.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+      <div class="card-body">
+        <h5 class="card-title">Geography</h5>
+        <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+        <a href="#" class="btn">Go Course</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./media/math.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+      <div class="card-body">
+        <h5 class="card-title">Math</h5>
+        <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+        <a href="#" class="btn">Go Course</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="./media/science.jpeg" class="rounded mx-auto d-block mt-2" style="width: 15vw; height: 15vh; border-radius: 20%;">
+      <div class="card-body">
+        <h5 class="card-title">Science</h5>
+        <p>This course is provided for the secondary stage and includes many examinations and exercises</p>
+        <a href="#" class="btn">Go Course</a>
+    </div>   
+  </div>
+</div>
+
+</div>
+</div>
+</main>
 </body>
 </html>
